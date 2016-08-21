@@ -28,12 +28,30 @@ elements to one end of a list, and remove elements from the opposite end.
 Queues can be used to provide a list ordered by the time elements have arrived.
 If you wanted to program the line for a deli counter, you would use a queue.
 
-## Dequeues
+> **Exercise** Write a function that reads six numbers from the command line,
+and prints the sum of all six afterwards. Use a queue to store each input as its
+received, receiving all six inputs before calculating the output.
+
+> **Exercise** Write a function readTwoInts() that reads two integers from the
+command line, and returns the sum. Write a second function runTwoInts() that
+reads an integer from the command and calls readTwoInts() that many times. Each
+return value from readTwoInts() should be stored in a queue. After all calls to
+readTwoInts() complete, print the sum of all numbers in the queue.
+
+## Dequeues (pronounced Decks)
 A Dequeue is a double ended queue. You can add and remove elements to both sides
 of the list. For example, a line at an emergency room is similar to a dequeue.
 As patients arrive, they each are attended to a first in first out order.
 However, if a patient arrives who needs urgent care, they are immediately
 removed from the back of the line and attended to.
+
+> **Exercise** Write a function palindrome detector that accepts a
+Dequeue<Integer> as an input. The Dequeue will always have either zero, or an
+even number of elements. This function should remove an element from each end of
+the dequeue and compare them. If the dequeue has zero elements, the function
+should print "No input". If the elements removed from the ends of the dequeue do
+not match, then the function should print "Not a palindrome". Otherwise, the
+function should output "Palindrome Found".
 
 ## Stack
 A Stack is a Last In First Out (LIFO) data structure. It allows you to add
