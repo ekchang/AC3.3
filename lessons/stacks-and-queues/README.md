@@ -58,3 +58,8 @@ A Stack is a Last In First Out (LIFO) data structure. It allows you to add
 elements to one end of a list, and remove elements from that same end. This is
 a form of memory organization that grows in one direction. Many embedded memory
 chips implement a stack as the primary interface to storing and receiving data.
+Stacks are considered the one of the simplest memory forms that can be used to
+build a computer.
+
+> **Exercise** Rewrite the palindrome detector, but instead of accepting a
+Dequeue<Integer>, it will accept a Stack<Integer>.
